@@ -22,7 +22,7 @@ int factorial(int a){
 }
 
 
-
+//Create a function that checks if a number is prime.
 bool isPrime(int a){
   if(a<=1){
     return false;
@@ -39,13 +39,13 @@ bool isPrime(int a){
 
 
 
-
+//Implement a function that converts Celsius to Fahrenheit.
 double celsiusToFahrenheit(double celsius){
   return (celsius * 9 / 5) + 32;
 }
 
 
-
+//Write a Dart function that takes a string as input and returns the reversed string
 String reverseString(String string){
   return String.fromCharCodes(string.runes.toList().reversed);
 }
@@ -58,6 +58,7 @@ String reverseString(String string){
 //CLASSES
 
 
+//Create a class named Person with attributes name and age. Implement a method to display the person's information.
 class Person{
   String name;
   int age;
@@ -71,7 +72,7 @@ class Person{
 
 
 
-
+//Define a class Rectangle with attributes length and width. Implement a method to calculate the area of the rectangle.
 class Rectangle{
   double length;
   double width;
@@ -85,7 +86,7 @@ class Rectangle{
 
 
 
-
+//Implement a class Circle with a method to calculate the circumference.
 class Circle {
   double radius;
 
@@ -100,7 +101,7 @@ class Circle {
 
 
 
-
+//Create a class BankAccount with methods to deposit and withdraw money, and to check the account balance.
 class BankAccount{
   double balance;
 
@@ -129,7 +130,7 @@ class BankAccount{
 
 
 
-
+//Write a class Student with attributes name, age, and grade. Implement a method to determine if the student passed or failed.
 class Student{
 
   String name;
@@ -155,6 +156,8 @@ class Student{
 
 
 
+
+//Define a class Calculator with methods for basic arithmetic operations (add, subtract, multiply, divide).
 class Calculator {
   double add(double num1, double num2) {
     return num1 + num2;
@@ -181,7 +184,7 @@ class Calculator {
 
 
 
-
+//Implement a class Car with methods to start, stop, and check the fuel level.
 class Car {
   bool isRunning = false;
   double fuelLevel = 0.0;
@@ -213,7 +216,7 @@ class Car {
 
 
 
-
+//Write a Dart program that uses a function to find the maximum element in a list of integers.
 int findMax(List<int> numbers) {
   if (numbers.isEmpty) {
     print('The list is empty.');
@@ -234,7 +237,7 @@ int findMax(List<int> numbers) {
 
 
 
-
+//Create a class Employee with attributes name, salary, and a method to give a bonus.
 class Employee {
   String name;
   double salary;
@@ -253,6 +256,7 @@ class Employee {
 
 
 
+//Combine a function and a class to calculate the area of a triangle given its base and height.
 
 // area of triangle in form of class
 class Triangle {
@@ -282,10 +286,12 @@ double calculateTriangleArea(double base, double height) {
 
 
 
+
+//Write a Dart program with a function to find the square root of a given number.
 double findSquareRoot(double number) {
   if (number < 0) {
     print('Cannot find the square root of a negative number.');
-    return double.nan; // Return Not-a-Number for invalid input
+    return double.nan; // Return Not-a-Number for nnegtive numbers
   }
 
   return sqrt(number);
@@ -295,18 +301,7 @@ double findSquareRoot(double number) {
 
 
 
-double findSquareRoot(double number) {
-  if (number < 0) {
-    print('Cannot find the square root of a negative number.');
-    return double.nan; // Return Not-a-Number for invalid input
-  }
-
-  return sqrt(number);
-}
-
-
-
-
+//Create a function that generates a list of Fibonacci numbers up to a specified limit.
 List<int> generateFibonacciList(int limit) {
   List<int> fibonacciList = [];
 
@@ -334,7 +329,7 @@ List<int> generateFibonacciList(int limit) {
 
 
 
-
+//Implement a function to determine if a given year is a leap year.
 bool isLeapYear(int year) {
   if (year % 4 != 0) {
     // Not divisible by 4, not a leap year
@@ -354,7 +349,7 @@ bool isLeapYear(int year) {
 
 
 
-
+//Define a recursive function to compute the factorial of a number.
 int factorial(int a) {
   if (a == 0 || a == 1) {
     return 1;
@@ -366,7 +361,7 @@ int factorial(int a) {
 
 
 
-
+//Write a function that takes a list of integers and returns a new list with only the even numbers.
 List<int> filterEvenNumbers(List<int> numbers) {
   return numbers.where((num) => num % 2 == 0).toList();
 }
